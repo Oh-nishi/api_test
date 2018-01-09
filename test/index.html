@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TEST</title>
+<style type="text/css">
+.table2{
+width: 150px; /* テーブルの横幅 */
+border-collapse: collapse; /* 枠線の表示方法 */
+border: 1px #1C79C6 solid; /* テーブル全体の枠線（太さ・色・スタイル） */
+background-color: #afeeee; /* 背景色 */
+}
+.table2 td{
+border: 1px #228b22 solid; /* セルの枠線（太さ・色・スタイル） */
+}
+</style>
+</head>
+<body>
+<!-- general form elements -->
+<div class="form-area">
+    <div class="form-header">
+        <h3 class="box-title">WebAPI Test</h3>
+    </div>
+    <!-- form start -->
+		<form id="my-form">
+    <div class="form-body">
+        <div class="form-group"><p>
+          <label for="NonPowerConsumption">非消費電力</label>
+          <input type="text" class="form-control" name="non_power_consumption" value=""> W(m3/h)</p>
+        </div>
+        <div class="form-group"><p>
+          <label for="TotalFloorArea">床面積の合計</label>
+          <input type="text" class="form-control" name="total_floor_area" value=""> m2</p>
+        </div>
+    </div>
+    <div class="form-footer">
+        <button type="submit" class="btn btn-primary" id="btnSubmit" name="btnSubmit">Submit</button>
+    </div>
+		</form>
+</div>
+<div data-result="">未取得</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="api.js"></script>
+<div id="columns"></div>
+<table id="tbl" class="table2">
+</table>
+
+</body>
+</html>
